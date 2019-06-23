@@ -1,0 +1,22 @@
+body	
+	{
+		text-align:center; 
+		background-image:url('Cute.gif');
+		margin: 100px 0px;
+	}
+	
+#button
+{
+	width: 250px;
+	padding: 10px;
+	border-radius: 5px;
+}
+h1
+	{
+		background-color: powderblue;
+		padding-right:10px;
+	}
+h3
+	{
+		background-color:;
+	}

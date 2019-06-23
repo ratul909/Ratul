@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-BN">
+<head>
+<title>Crazy World</title>
+	<meta charset="UTF-8">
+  <meta name="description" content="Fun">
+  <meta name="keywords" content="Fun, Comedy, Troll">
+  <meta name="author" content="Ratul Islam">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+
+<body>
+	<div id="header">
+	<h1> Crazy world </h1></br>
+	<nav>
+	<ul>
+  <li><a href="project.htm">Home</a></li>
+  <li><a href="http://www.prothomalo.com/bangladesh">News</a></li>
+  <li><a href="#">Movies</a></li>
+  <li><a href="#software">Software</a></li>
+  <li><a href="#quetoes">Quetoes</a></li>
+  <li><a href="#book">Book</a></li>
+  <li><a href="#contact">Contact</a></li>
+   <li><a href="#about">About</a></li> </br>
+   <p><a href="regform.htm"> Register Here </a> or
+   <a href="login.htm"> Login </a>
+   </p>
+   
+   
+	</ul>
+	</nav>
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
+	
+	<h4 id="demo"></h4>
+    
+    <h2>Stay With us & Take Maja</h2>
+  </div>
+  
+	<!-- This is a comment -->
+<p> Hello World!</br>
+Welcome Here! And Thanks for Being With Us. </br>
+	Youtube Special, Facebook Special, Latest Movies, Latest news Update will be shown here. </br>
+	Various Types Crack Software Here. </br> 
+		Famous Persons Quetoes</br> Stories, Novels </br> Facebook Security Tricks </br>
+		</br><h3> GOOD JUDGEMENT COMES FROM EXPERIENCE & A LOT OF THAT COMES FROM BAD JUDGEMENT.</h3></p></br>
+	
+
+		<!-- Comments are not displayed in the browser -->
+
+		<button onclick="getLocation()">Check in</button>
+
+<div id="mapholder"></div>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+//To use this code on your website, get a free API key from Google.
+//Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+<h6><button type="button"
+	onclick="document.getElementById('demo').innerHTML = Date()">
+	Date and Time.</button></h6>
+		
+
+  <h5> <iframe width="260" height="140" src="https://www.youtube.com/embed/MJo410k6PTQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <a href= "https://www.youtube.com/channel/UC4KdaHOOREsNDiMMwD_AzEw"> <img src ="youtubelogosite.jpg" alt="Youtube" style="width:62px;height:52px;"></a>
+<a href= "https://www.facebook.com/fuchka.wtf/"> <img src ="Facebooklogosite.png" alt="Facebook" style="width:62px;height:52px;"> </a> </br> </h5>
+
+
+	
+<footer>
+&#169;2018 Crazy World by Ratul &#9829;
+</footer>
+</body>
+</html>

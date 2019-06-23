@@ -1,0 +1,113 @@
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+*
+{
+	margin:0px;
+	padding:0px;
+}
+
+h1 {
+	text-align:center; 
+		color:gray; 
+		font-family:Courier;
+		font-size : 80px;
+		
+	}
+
+ul {
+     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    width:120%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+	position:relative;
+}
+
+li a:hover {
+    background-color: powderblue;
+}
+body	
+	{
+		background-image:url('Developer.jpg');
+	
+	}
+	
+
+
+		
+	h2 {text-align:center; 
+		color :black; 
+		font-family:Comic Sans MS;
+		font-size: 30px;
+		letter-spacing: 3px;
+		}
+	
+	p {
+		
+		text-align:center; 
+		color :red; 
+		font-size: 25px; 
+		font-family:Comic Sans MS;
+		background-color:;
+		border: 
+	  }
+
+h3 {
+	text-align:center;
+	color:white;
+	font-family :Courier New ;
+	font-size: 30px;
+	border: 2px solid Orange;
+	outline: #4CAF50 solid 9px;
+	border-radius: 15px;
+	}
+
+h5 {
+	text-align: center;
+	}
+h6 {
+	text-align: right;
+	}
+	
+h4 {
+	font-family :Courier New;
+	color : white;
+	text-align: right;
+	}
+	
+	a {
+		font-family: Comic Sans MS;
+		color:white;
+		text-align:right;
+	}
+input[type=text]:focus {
+    width: 100%;
+}
